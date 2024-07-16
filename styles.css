@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eaeaea;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: grid;
+  grid-template-columns: repeat(12, 50px);
+  grid-template-rows: repeat(12, 50px);
+  border: 1px solid #eaeaea;
+}
+
+.logo .block {
+  background-color: transparent;
+  border: 1px solid #fefefe;
+}
+
+.logo .block--active {
+  background-color: #5bde3f;
+}
